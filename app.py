@@ -53,4 +53,7 @@ def chat():
         return jsonify({'response': f"Sorry, I encountered an error: {str(e)}"}), 500
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    # Get port from environment variable or default to 5000
+    port = int(os.environ.get('PORT', 5000))
+    # Use 0.0.0.0 as host for production deployments
+    app.run(debug=False, host='0.0.0.0', port=port)
