@@ -29,7 +29,7 @@ Finance-GPT is a Flask-based web application powered by the Groq API that specia
    python app.py
    ```
 
-4. Open your browser and go to `http://localhost:5000`
+4. Open your browser and go to 'https://finance-gpt-39qq.onrender.com/'
 
 ## Usage
 
